@@ -241,7 +241,6 @@
     visibility: hidden;
     opacity: 0;
     transition: 0.3s ease;
-    font-family: "Open Sans", sans-serif;
 }
 
 .homeroom-image-icon {
@@ -270,7 +269,6 @@
     font-weight: 700;
     font-size: 26px;
     padding-bottom: 15px;
-    font-family: "Poppins", sans-serif;
 }
 
 .homeroom-text p {
@@ -508,7 +506,7 @@
 .header-color h2 button {
     font-size: 15px;
     color: white;
-    font-weight: 600;
+    font-weight: 500;
     transition: 0.3s;
     text-align: left;
 }
@@ -535,7 +533,7 @@
     color: rgb(31, 31, 31);
     line-height: 25px;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
     padding: 15px;
 }
 
@@ -550,10 +548,6 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     overflow: hidden;
     padding: 50px 0;
-}
-
-#school img {
-    padding-top: 20px;
 }
 
 #school p {
@@ -842,6 +836,10 @@ p.header-p {
         padding: 0;
     }
 
+    #school img {
+        padding-top: 20px;
+    }
+
     .teacher-memo-slider {
         height: 380px;
     }
@@ -865,6 +863,8 @@ p.header-p {
 /** TABLET VERSION */
 
 @media (max-width: 991px) {
+
+
     .teacher-memo-flex-image img {
         width: 200px;
         height: 200px;
@@ -887,12 +887,26 @@ p.header-p {
 }
 
 @media (max-width: 767px) {
+    .navbar-nav a:hover {
+        transform: scale(1) translateY(-3px);
+    }
+
     .member-flex-slider {
         height: 1150px;
     }
 }
 
 @media (max-width: 580px) {
+
+    .teacher-memo-flex-text h3 {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .teacher-memo-slide {
+        padding: 0 6%;
+    }
+
     #school p {
         text-align: center;
     }
@@ -979,13 +993,19 @@ p.header-p {
         height: 450px;
     }
 
-    .teacher-memo-flex-text h3 {
-        font-size: 15px;
-    }
-
     .teacher-memo-flex-image img {
         width: 180px;
         height: 180px;
+    }
+
+    .teacher-memo-flex-text h3 {
+        font-size: 14px;
+    }
+
+    .member-content-text p {
+        font-size: 10px !important;
+        font-weight: 700;
+        line-height: 17px;
     }
 
     .header-color h2 button {
@@ -1019,7 +1039,13 @@ p.header-p {
 
 @media (max-width: 430px) {
     .member-flex-slider {
-        height: 1600px;
+        height: 800px;
+    }
+
+    p.header-p {
+        font-size: 13px;
+        padding: 0 5px;
+        padding-bottom: 30px;
     }
 
     .member-content-image img {
@@ -1027,14 +1053,21 @@ p.header-p {
         height: 140px;
     }
 
-    .member-content {
-        padding: 10px;
+    .member-content-text {
+        padding: 0 10px;
     }
 
     .member-content-text p {
-        color: white;
-        font-size: 4px;
-        font-weight: 600;
-        line-height: 17px;
+        font-size: 9px !important;
+    }
+
+    .member-content {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .member-flex-slider {
+        height: 1600px;
     }
 }
