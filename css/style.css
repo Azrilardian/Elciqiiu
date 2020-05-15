@@ -635,7 +635,7 @@ b {
 
 b {
     color: rgb(90, 90, 90);
-    font-weight: bold;
+    font-weight: bold !important;
 }
 
 #tentang-elci,
