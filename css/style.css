@@ -30,7 +30,7 @@
 /*! JUMBOTRON */
 
 .jumbotron {
-    background-image: url(../image/jumbotron1.jpeg);
+    background-image: url(../image/jumbotron1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1039,7 +1039,7 @@ p.header-p {
 
 @media (max-width: 430px) {
     .member-flex-slider {
-        height: 800px;
+        height: 830px;
     }
 
     p.header-p {
@@ -1062,7 +1062,7 @@ p.header-p {
     }
 
     .member-content {
-        padding: 10px;
+        padding: 15px;
     }
 }
 
