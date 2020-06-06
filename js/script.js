@@ -1,6 +1,6 @@
 // event pada saat link di klik
 
-$(".page-scroll").on("click", function (e) {
+$(".page-scroll").on("click", function(e) {
     // ambil isi href
     var tujuan = $(this).attr("href");
     // tangkap elemen ybs
@@ -17,7 +17,7 @@ $(".page-scroll").on("click", function (e) {
     e.preventDefault();
 });
 
-$(window).scroll(function () {
+$(window).scroll(function() {
     if ($(window).scrollTop() > 550) {
         $(".navbar").addClass("navbar-shadow");
     } else {
@@ -47,8 +47,8 @@ $(window).scroll(function () {
     }
 
     if (wScroll > $("#wali-kelas").offset().top - 250) {
-        $("#wali-kelas .homeroom-flex").each(function (i) {
-            setTimeout(function () {
+        $("#wali-kelas .homeroom-flex").each(function(i) {
+            setTimeout(function() {
                 $("#wali-kelas .homeroom-flex")
                     .eq(i)
                     .addClass("muncul");
@@ -57,8 +57,8 @@ $(window).scroll(function () {
     }
 
     if (wScroll > $("#member").offset().top - 300) {
-        $("#member .member-content").each(function (i) {
-            setTimeout(function () {
+        $("#member .member-content").each(function(i) {
+            setTimeout(function() {
                 $("#member .member-content")
                     .eq(i)
                     .addClass("muncul");
@@ -69,7 +69,7 @@ $(window).scroll(function () {
 
 // parallax
 
-$(window).on("load", function () {
+$(window).on("load", function() {
     $(".tombol").addClass("tombol-muncul");
     $(".tombol-transparent").addClass("tombol-muncul");
     $(".jumbotron h1").addClass("muncul");
@@ -85,14 +85,14 @@ function sliderMember() {
     const size = carouselImg[0].clientWidth;
 
     function toDots(dots) {
-        dot.forEach(function (e) {
+        dot.forEach(function(e) {
             e.classList.contains('active');
             e.classList.remove('active');
             dots.classList.add('active');
         })
     }
 
-    next.addEventListener("click", function () {
+    next.addEventListener("click", function() {
         if (counter < 3) {
             counter++;
             carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
@@ -101,7 +101,7 @@ function sliderMember() {
             return;
         }
     });
-    prev.addEventListener("click", function () {
+    prev.addEventListener("click", function() {
         if (counter > 0) {
             counter--;
             carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
@@ -112,7 +112,7 @@ function sliderMember() {
     });
 
     function sliderMemberDots(dots, toCounter) {
-        dots.addEventListener('click', function () {
+        dots.addEventListener('click', function() {
             if (dots.classList.contains('active')) return;
             else {
                 counter = toCounter;
@@ -135,12 +135,12 @@ function sliderkataGuru() {
     let counter = 1;
     const size = carouselImg[0].clientWidth;
     carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
-    setInterval(function () {
+    setInterval(function() {
         if (counter >= carouselImg.length - 1) return;
-        carouselSlide.style.transition = "transform .7s ease-in";
+        carouselSlide.style.transition = "transform .7s ease-in-out";
         counter++;
         carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
-        carouselSlide.addEventListener("transitionend", function () {
+        carouselSlide.addEventListener("transitionend", function() {
             if (carouselImg[counter].id == "first-clone") {
                 carouselSlide.style.transition = "none";
                 counter = carouselImg.length - counter;
