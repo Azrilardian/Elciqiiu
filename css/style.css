@@ -435,6 +435,59 @@
      color: rgb(90, 90, 90);
  }
  
+ .ig-profile {
+     background: linear-gradient(to right, #2595e0, #3a6ece);
+     margin: 250px 0;
+     padding: 50px 0;
+     color: white;
+     position: relative;
+     overflow: hidden;
+ }
+ 
+ .ig-profile .container .row .col-lg-5 {
+     z-index: 2;
+ }
+ 
+ .ig-profile .container .col-lg-5 .col-lg-3 img {
+     width: 100px;
+ }
+ 
+ .ig-profile h6 {
+     color: black;
+     font-weight: 500;
+ }
+ 
+ .ig-profile h2 {
+     margin-top: -5px;
+ }
+ 
+ .ig-profile button {
+     width: 150px;
+     border-radius: 99px;
+     padding: 7px 0;
+     background-color: white;
+     font-weight: 500;
+     border: 4px solid #3a6ece;
+     transition: .2s ease-in-out;
+ }
+ 
+ .ig-profile button:hover {
+     opacity: .9;
+ }
+ 
+ .ig-profile img.background {
+     position: absolute;
+     right: 15%;
+     top: -18%;
+     width: 450px;
+     opacity: .07;
+     pointer-events: none;
+ }
+ 
+ .ig-profile .container .col-lg-5 img {
+     width: 300px;
+ }
+ 
  #FAQ {
      font-family: "Poppins", sans-serif;
      margin: 250px 0;
@@ -563,6 +616,10 @@
  b {
      color: rgb(90, 90, 90);
      font-weight: bold !important;
+ }
+ 
+ button:focus {
+     outline: none;
  }
  
  #tentang-elci,
@@ -789,9 +846,38 @@
      .member-flex-slider {
          height: 1150px;
      }
+     .ig-profile .container .row .col-lg-5 .row {
+         justify-content: center;
+     }
+     .ig-profile .container .row .col-sm-12 {
+         margin-bottom: 30px;
+     }
+     .ig-profile img.background {
+         right: 0;
+         left: 0;
+         top: 0;
+         bottom: 0;
+         margin: auto;
+         width: 400px;
+     }
  }
  
  @media (max-width: 580px) {
+     .ig-profile .container .row .col-lg-5 .row {
+         justify-content: center;
+         align-items: center;
+     }
+     .ig-profile .container .row .col-lg-5 {
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+     }
+     .ig-profile .container .row .col-lg-5 .row .col-lg-8 {
+         flex: 4;
+     }
+     .ig-profile .container .row .col-lg-5 .row .col-lg-3 {
+         flex: 1;
+     }
      .teacher-memo-flex-text h3 {
          font-size: 15px;
          font-weight: 400;
@@ -866,6 +952,12 @@
      .teacher-memo-slider {
          height: 450px;
      }
+     .ig-profile h6 {
+         font-size: 15px;
+     }
+     .ig-profile h2 {
+         font-size: 23px;
+     }
      .teacher-memo-flex-image img {
          width: 180px;
          height: 180px;
@@ -923,6 +1015,9 @@
      }
      .member-content {
          padding: 15px;
+     }
+     .ig-profile img.background {
+         width: 300px;
      }
  }
  
