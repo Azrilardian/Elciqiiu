@@ -850,7 +850,7 @@
          justify-content: center;
      }
      .ig-profile .container .row .col-sm-12 {
-         margin-bottom: 30px;
+         margin-bottom: 50px;
      }
      .ig-profile img.background {
          right: 0;
@@ -957,6 +957,9 @@
      }
      .ig-profile h2 {
          font-size: 23px;
+     }
+     .ig-profile h4 {
+         font-size: 20px;
      }
      .teacher-memo-flex-image img {
          width: 180px;
