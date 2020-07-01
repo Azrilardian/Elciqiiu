@@ -850,7 +850,7 @@
          justify-content: center;
      }
      .ig-profile .container .row .col-sm-12 {
-         margin-bottom: 50px;
+         margin-bottom: 65px;
      }
      .ig-profile img.background {
          right: 0;
@@ -863,6 +863,9 @@
  }
  
  @media (max-width: 580px) {
+     .ig-profile {
+         padding: 65px 0;
+     }
      .ig-profile .container .row .col-lg-5 .row {
          justify-content: center;
          align-items: center;
