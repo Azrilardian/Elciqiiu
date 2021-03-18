@@ -6,7 +6,7 @@ Merupakan website yang saya persembahkan untuk kelas 12 Mia 9, dimana kelas ini 
 
 Website ini juga merupakan website pertama saya ( tidak termasuk pembelajaran ).
 
-Desain dan visual terinspirasi dari website [fullstackdesigner]() milik [Sandhika Galih]().
+Desain dan visual terinspirasi dari website [fullstackdesigner.id](https://fullstackdesigner.id/) milik [Sandhika Galih](https://github.com/sandhikagalih).
 
 ## Teknologi yang digunakan
 
@@ -21,6 +21,8 @@ Desain dan visual terinspirasi dari website [fullstackdesigner]() milik [Sandhik
 
 ## Catatan
 
-Ini merupakan pengembangan kedua. Versi pertama tidak menggunakan Bootstrap, dapat di lihat di [Website Elciqiiu]().
+Ini merupakan pengembangan kedua. Versi pertama tidak menggunakan Bootstrap, dapat di lihat di [Website Elciqiiu](https://github.com/Azrilardian/Website-Elci).
 
 ## Screenshot
+
+![Screenshot satu](./Screenshot/1.png)
