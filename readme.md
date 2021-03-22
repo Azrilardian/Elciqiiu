@@ -19,10 +19,6 @@ Desain dan visual terinspirasi dari website [fullstackdesigner.id](https://fulls
 
 -   Responsif pada semua ukuran _device_
 
-## Catatan
-
-Ini merupakan pengembangan kedua. Versi pertama tidak menggunakan Bootstrap, dapat di lihat di [Website Elciqiiu](https://github.com/Azrilardian/Website-Elci).
-
 ## Screenshot
 
 ![Screenshot satu](./Screenshot/1.png)
